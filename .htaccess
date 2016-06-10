@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /emissorAngular
+  RewriteRule ^nova-nfe/?$ site/nova_nfe/nova_nfe.php [NC,L]
+  RewriteRule ^gerenciar-nfes/?$ site/gerenciar_nfes/gerenciar_nfes.php [NC,L]
+  RewriteRule ^produtos/?$ site/cadastros/produtos/produtos.php [NC,L]
+  
+
+
+  ErrorDocument 404 notfound.html
+</IfModule>
+
